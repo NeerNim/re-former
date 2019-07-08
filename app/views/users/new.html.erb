@@ -24,6 +24,18 @@
  <% end %>
  -->
 <%= form_for @user do |f| %>
+  <div id="error_explanation">
+    <% if @user.errors.any? %>
+      <h2>
+        <% pluralize(@user.errors.count, "error") %> Not allowed to save
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg%></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   Name: <%= f.text_field :name %>
   Email: <%= f.text_field :email %>
   Password <%= f.password_field :password %>
