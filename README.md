@@ -1,24 +1,40 @@
-# README
+# Re-former 
+A signup form using both pure HTML and then later using Rails forms helper method that helps building robust form with extra security. It covers integrating a signup form with your Rails application and providing help if the user enters incorrect information.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Learn more about the Project
+“This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com”
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+To get started with the app, clone the repo and then install the needed gems:
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+Next, migrate the database:
 
-* Database creation
+```
+$ rails db:migrate
+```
 
-* Database initialization
+Finally, run the test suite to verify that everything is working correctly:
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+If the test suite passes, you'll be ready to run the app in a local server:
 
-* Deployment instructions
+```
+$ rails server
+```
 
-* ...
+# Authors
+* **Afani Martin** - [afani martin](https://github.com/whiz25)
+* **Neer Thapa** - [NeerNim](https://github.com/NeerNim)
+
+## License
+
+MIT License See
+[LICENSE.md](LICENSE.md) for details.
