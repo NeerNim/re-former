@@ -9,7 +9,7 @@
   <input type="submit" name="commit" value="Create">
 </form>
  -->
-
+<!--
  <%= form_tag("/users", method: "POST") do %>
  	<%= label_tag(:name, "User name: ") %>
  	<%= text_field_tag(:name) %>
@@ -22,3 +22,10 @@
 
  	<%= submit_tag("Create") %>
  <% end %>
+ -->
+<%= form_for @user do |f| %>
+  Name: <%= f.text_field :name %>
+  Email: <%= f.text_field :email %>
+  Password <%= f.password_field :password %>
+  <%= f.submit "Create" %>
+<% end %>
